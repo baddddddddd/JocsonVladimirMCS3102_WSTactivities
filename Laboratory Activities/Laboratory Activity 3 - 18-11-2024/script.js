@@ -59,11 +59,11 @@ function playTypingSound(key) {
   let clone;
 
   if (key.length == 1 && /[a-zA-Z0-9!@#$%^&*(),.?":{}|<>]/.test(key)) {
-    clone = softTypeAudio;
+    clone = softTypeAudio.cloneNode();
     clone.currentTime = 0.05;
     clone.volume = 0.7;
   } else {
-    clone = loudTypeAudio;
+    clone = loudTypeAudio.cloneNode();
     clone.currentTime = 0;
     clone.volume = 1;
   }
