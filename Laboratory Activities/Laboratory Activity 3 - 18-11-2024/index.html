@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Counter</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div class="main-content">
+        <div class="heading">
+          <h1 class="animated-text">Zen&nbsp;Word&nbsp;Counter</h1>
+        </div>
+        <div class="input-area">
+          <textarea
+            class="text-input"
+            name="text-input"
+            id="text-input"
+            placeholder="Just chill and keep typing..."
+          ></textarea>
+        </div>
+        <div class="result-area">
+          <div class="wordcount-display counter-display">
+            <h2 class="wordcount-text counter-text">0</h2>
+            <h3 class="wordcount-label counter-label">Words</h3>
+          </div>
+          <div class="sentencecount-display counter-display">
+            <h2 class="sentencecount-text counter-text">0</h2>
+            <h3 class="sentencecount-text counter-label">Sentences</h3>
+            <span class="sentencecount-text"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio
+      class="typing-sound soft-type-sound"
+      src="assets/mem-type.wav"
+      preload="auto"
+    ></audio>
+    <audio
+      class="typing-sound loud-type-sound"
+      src="assets/mech-type.wav"
+      preload="auto"
+    ></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
