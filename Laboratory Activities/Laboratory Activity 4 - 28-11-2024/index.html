@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Vladimir Jocson</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="nav-items">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#favourites">Favourites</a></li>
+      </ul>
+
+      <div class="socials">
+        <a href="https://www.facebook.com/vladi.jocson" target="_blank"
+          ><i class="bx bxl-facebook"></i
+        ></a>
+        <a href="https://github.com/baddddddddd/" target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="mailto:22-08367@g.batstate-u.edu.ph" target="_blank"
+          ><i class="bx bxl-gmail"></i
+        ></a>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Oh hi! I am</h3>
+        <h1>Vladimir Jocson</h1>
+        <h5>
+          A Computer Science student from <span>Batangas State University</span>
+        </h5>
+        <a href="#about" class="btn-hollow">More About Me</a>
+      </div>
+      <div class="parallax-bg">
+        <img
+          src="./assets/mountains-parallax/stars.png"
+          id="stars"
+          alt="stars"
+        />
+        <img
+          src="./assets/mountains-parallax/stars.png"
+          id="moon"
+          alt="moon"
+        />
+        <img
+          src="./assets/mountains-parallax/mountains.png"
+          id="mountains"
+          alt="mountains"
+        />
+        <img
+          src="./assets/mountains-parallax/clouds.png"
+          id="clouds"
+          alt="clouds"
+        />
+        <img
+          src="./assets/mountains-parallax/left.png"
+          id="left-terrain"
+          alt="left-terrain"
+        />
+        <img
+          src="./assets/mountains-parallax/right.png"
+          id="right-terrain"
+          alt="right-terrain"
+        />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-content">
+        <div
+          class="card-swiper"
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-delay="200"
+        >
+          <div class="card-groups">
+            <div class="card-group" data-index="0" data-status="active">
+              <div class="big-card card"></div>
+              <div class="big-card card"></div>
+              <div class="big-card card"></div>
+              <div class="big-card card"></div>
+            </div>
+            <div class="card-group" data-index="1" data-status="inactive">
+              <div class="big-card card"></div>
+              <div class="big-card card"></div>
+              <div class="big-card card"></div>
+              <div class="big-card card"></div>
+            </div>
+            <div class="card-group" data-index="2" data-status="inactive">
+              <div class="big-card card"></div>
+              <div class="big-card card"></div>
+              <div class="big-card card"></div>
+              <div class="big-card card"></div>
+            </div>
+          </div>
+          <div class="card-swiper-buttons">
+            <button class="swipe-left" onclick="handleSwipeLeft()">
+              <i class="bx bx-chevron-left"></i>
+            </button>
+            <button class="swipe-left" onclick="handleSwipeRight()">
+              <i class="bx bx-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <div data-aos="fade-down" data-aos-duration="500">
+            <h2>About Me</h2>
+            <hr class="divider-half" />
+          </div>
+          <div
+            class="about-parts"
+            data-aos="fade-left"
+            data-aos-duration="500"
+            data-aos-delay="100"
+          >
+            <div
+              class="about-part"
+              data-about-part="0"
+              data-aboutstatus="active"
+            >
+              <p>
+                <strong
+                  >Hello! My full name is Vladimir Magsino Jocson, but everyone
+                  calls me Vlad.</strong
+                >
+              </p>
+              <p>
+                I graduated from Calamba City Science Integrated School as a
+                STEM student, and I am currently a first year student taking a
+                Bachelor of Science in Computer Science in Batangas State
+                University.
+              </p>
+              <p>
+                I am in a happy family of four and they are my inspiration to
+                achieve all sorts of great things in life.
+              </p>
+            </div>
+            <div
+              class="about-part"
+              data-about-part="1"
+              data-aboutstatus="inactive"
+            >
+              <p><strong>I am rather a goofy guy.</strong></p>
+              <p>
+                Although I am introverted, I like to hang out and mess around
+                with my friends. It might not seem like it when people first
+                meet me, but I do like teasing and goofing around with people.
+              </p>
+              <p>
+                But! This side of mine is only observable when I've spent quite
+                some time with you. I do not goof around with people that I am
+                not yet comfortable hanging around with, and I have to say, it
+                takes a considerable amount of time before I get comfortable
+                with someone.
+              </p>
+            </div>
+            <div
+              class="about-part"
+              data-about-part="2"
+              data-aboutstatus="inactive"
+            >
+              <p><strong>I really love cats.</strong></p>
+              <p>
+                Cats make me feel at ease. I like it when cats sit on my lap and
+                when they allow me to pet them.
+              </p>
+              <p>
+                I also like to play around with them just to relieve some stress
+                and anxiety.
+              </p>
+            </div>
+            <div class="about-part-wrapper">
+              <p><strong>I am rather a goofy guy.</strong></p>
+              <p>
+                Although I am introverted, I like to hang out and mess around
+                with my friends. It might not seem like it when people first
+                meet me, but I do like teasing and goofing around with people.
+              </p>
+              <p>
+                But! This side of mine is only observable when I've spent quite
+                some time with you. I do not goof around with people that I am
+                not yet comfortable hanging around with, and I have to say, it
+                takes a considerable amount of time before I get comfortable
+                with someone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="hobbies">
+      <div data-aos="fade-down" data-aos-duration="500">
+        <h2>My Hobbies</h2>
+        <hr class="divider-half" />
+      </div>
+      <div class="showcase-content">
+        <div class="showcase-item-wrapper">
+          <div class="showcase-item" data-aos="fade-right" data-aos-delay="100">
+            <i class="bx bx-dumbbell"></i>
+            <h3>Working Out</h3>
+            <p>
+              I like working out not just because I want to have a good overall
+              physical condition, but because it also helps in improving my
+              mood. I also like beating my personal records as it gives me a
+              sense of accomplishment.
+            </p>
+          </div>
+        </div>
+        <div class="showcase-item-wrapper">
+          <div class="showcase-item" data-aos="fade-right" data-aos-delay="200">
+            <i class="bx bx-code-alt"></i>
+            <h3>Programming</h3>
+            <p>
+              I like to program different things during my free time. I try to
+              create tools that automate a certain task for me or to solve a
+              problem that I encounter occasionally. I also create video games,
+              develop websites, and reverse engineer stuffs!
+            </p>
+          </div>
+        </div>
+        <div class="showcase-item-wrapper">
+          <div class="showcase-item" data-aos="fade-right" data-aos-delay="300">
+            <i class="bx bx-tv"></i>
+            <h3>Animanga</h3>
+            <p>
+              I love watching anime and reading manga. Doing these allows me to
+              temporarily have peace and forget about reality. I also learn a
+              lot from fictional characters which can help me become the better
+              person that I want to be.
+            </p>
+          </div>
+        </div>
+        <div class="showcase-item-wrapper">
+          <div class="showcase-item" data-aos="fade-right" data-aos-delay="400">
+            <i class="bx bx-book-reader"></i>
+            <h3>Learning</h3>
+            <p>
+              I just looooooove learning about different things, and this is
+              especially true if it's related to computer science, physics, and
+              mathematics. I also love learning about different technologies and
+              apply it to my own projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="interests">
+      <div data-aos="fade-down" data-aos-duration="500">
+        <h2>My Interests</h2>
+        <hr class="divider-half" />
+      </div>
+      <div class="showcase-content">
+        <div class="showcase-item-wrapper">
+          <div class="showcase-item" data-aos="fade-right" data-aos-delay="100">
+            <i class="bx bxs-planet"></i>
+            <h3>Astronomy</h3>
+            <p>
+              Looking at the night sky and thinking what happens in the far
+              reaches of the universe just makes me feel, I don't know...
+              excited? I love to imagine what it's like to float in space and
+              see what the universe has to offer with my own eyes.
+            </p>
+          </div>
+        </div>
+        <div class="showcase-item-wrapper">
+          <div class="showcase-item" data-aos="fade-right" data-aos-delay="200">
+            <i class="bx bxs-terminal"></i>
+            <h3>Computer Science</h3>
+            <p>
+              Aside from the fact that I love technology in general and that I
+              love Mathematics, I also love solving various problems
+              algorithmically in the most efficient way possible, which is what
+              Computer Science really is all about.
+            </p>
+          </div>
+        </div>
+        <div class="showcase-item-wrapper">
+          <div class="showcase-item" data-aos="fade-right" data-aos-delay="300">
+            <i class="bx bx-math"></i>
+            <h3>Mathematics</h3>
+            <p>
+              Numbers help us understand how our universe works, and Mathematics
+              help us understand the nature of numbers. I also love finding and
+              thinking about numbers in general, which is why I love
+              Mathematics.
+            </p>
+          </div>
+        </div>
+        <div class="showcase-item-wrapper">
+          <div class="showcase-item" data-aos="fade-right" data-aos-delay="400">
+            <i class="bx bx-atom"></i>
+            <h3>Quantum Physics</h3>
+            <p>
+              It will take time, but I want to know how our universe really
+              works at a quantum level, where everything that has happened, is
+              currently happening, and will happen could be explained with our
+              understanding of Quantum Physics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="favourites">
+      <div data-aos="fade-down" data-aos-duration="500">
+        <h2>My Favourites</h2>
+        <hr class="divider-half" />
+      </div>
+      <div class="faves-content">
+        <div
+          class="faves-nav"
+          data-aos="fade-down"
+          data-aos-duration="500"
+          ata-aos-delay="100"
+        >
+          <button
+            class="faves-nav-btn btn-hollow"
+            id="btn-anime"
+            onclick="showAnime()"
+          >
+            Anime
+          </button>
+          <button
+            class="faves-nav-btn btn-hollow"
+            id="btn-manga"
+            onclick="showManga()"
+          >
+            Manga
+          </button>
+          <button
+            class="faves-nav-btn btn-hollow"
+            id="btn-movies"
+            onclick="showMovies()"
+          >
+            Movies
+          </button>
+          <button
+            class="faves-nav-btn btn-hollow"
+            id="btn-music"
+            onclick="showMusic()"
+          >
+            Music
+          </button>
+          <button
+            class="faves-nav-btn btn-hollow"
+            id="btn-website"
+            onclick="showWebsite()"
+          >
+            Website
+          </button>
+        </div>
+        <div class="faves-grid-wrapper">
+          <div class="faves-grid" id="anime">
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="100">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>Re:ZERO -Starting Life in Another World-</h3>
+                </div>
+              </div>
+            </div>
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="200">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>A Place Further Than The Universe</h3>
+                </div>
+              </div>
+            </div>
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="300">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>The Pet Girl of Sakurasou</h3>
+                </div>
+              </div>
+            </div>
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="400">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>Chainsaw Man</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faves-grid" id="manga">
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="100">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>Bloom Into You</h3>
+                </div>
+              </div>
+            </div>
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="200">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>Kaguya-sama: Love is War</h3>
+                </div>
+              </div>
+            </div>
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="300">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>The Promised Neverland</h3>
+                </div>
+              </div>
+            </div>
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="400">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>Act-age</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faves-grid" id="movies">
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="100">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>A Silent Voice</h3>
+                </div>
+              </div>
+            </div>
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="200">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>I Want To Eat Your Pancreas</h3>
+                </div>
+              </div>
+            </div>
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="300">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>Violet Evergarden the Movie</h3>
+                </div>
+              </div>
+            </div>
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="400">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>Rascal Does Not Dream of a Dreaming Girl</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faves-grid" id="music">
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="100">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>My Blood</h3>
+                  <h5>twenty one pilots</h5>
+                </div>
+              </div>
+            </div>
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="200">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>I Love You So</h3>
+                  <h5>The Walters</h5>
+                </div>
+              </div>
+            </div>
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="300">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>Cancer</h3>
+                  <h5>twenty one pilots</h5>
+                </div>
+              </div>
+            </div>
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="400">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>I Ain't Perfect</h3>
+                  <h5>IV of Spades</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faves-grid" id="website">
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="100">
+              <a target="_blank" href="https://www.khanacademy.org/">
+                <div class="overlay">
+                  <div class="overlay-text">
+                    <h3>Khan Academy</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="200">
+              <a target="_blank" href="https://github.com/">
+                <div class="overlay">
+                  <div class="overlay-text">
+                    <h3>GitHub</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="300">
+              <a target="_blank" href="https://www.pexels.com/">
+                <div class="overlay">
+                  <div class="overlay-text">
+                    <h3>Pexels</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="faves-item" data-aos="fade-right" data-aos-delay="400">
+              <a target="_blank" href="https://leetcode.com/">
+                <div class="overlay">
+                  <div class="overlay-text">
+                    <h3>LeetCode</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="faves-grid" id="spacer">
+            <div class="faves-item">
+              <div class="overlay">
+                <div class="overlay-text">
+                  <h3>Title</h3>
+                  <h5>Subtitle</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
